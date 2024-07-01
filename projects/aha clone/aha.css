@@ -1,0 +1,125 @@
+body{
+    margin: 0px;
+    background-image: url("https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&w=600");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   animation-name: ntr;
+   animation-duration: 50s;
+   animation-iteration-count: infinite;
+}
+@keyframes ntr{
+    0%{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScgtgYiF_2WUWXY_JMPjwB6-VLo14vruQbAw&s");
+
+    }
+    10%{
+        background-image: url("https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=300");
+
+    }
+    20%{
+        background-image: url("https://images.pexels.com/photos/1766838/pexels-photo-1766838.jpeg?auto=compress&cs=tinysrgb&w=300");
+
+    }
+    30%{
+        background-image: url("https://images.pexels.com/photos/128234/pexels-photo-128234.jpeg?auto=compress&cs=tinysrgb&w=300");
+
+    }
+    50%{
+        background-image: url("https://images.pexels.com/photos/96627/pexels-photo-96627.jpeg?auto=compress&cs=tinysrgb&w=300");
+    }
+}
+.a{
+    position: fixed;
+    margin-top: -0px;
+    display: grid;
+    grid-template-columns: 170px 90px 90px 90px 160px 90px auto auto auto;
+    background-color: rgb(29, 9, 9);
+    height: 75px;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 1;
+
+}
+.b img{
+    position: relative;
+    margin: 2px;
+    padding: 2px;
+    font-size: 10px;
+}
+.c{
+    position: relative;
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+
+}
+.d{
+    position: relative;
+    background-color: orange;
+    text-align: center;
+    border: solid;
+    margin-left: 400px;
+
+    height: 30px;
+    width: 110px;
+    margin-top: 30px;
+    border-radius: 4px;
+    padding: 1px;
+}
+.e{
+    color: green;
+    position: relative;
+    margin-top: 30px;
+}
+button{
+    border: none;
+    background-color:transparent;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+.f{
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+    height: 500px;
+    background-image: url("https://image-resizer-cloud-api.akamaized.net/image/C95494C7-1FEB-4697-AF56-267BAF635B3A/0-3x1.jpg?width=2310&updatedTime=2024-06-10T10:27:49Z&dt=Web");
+    animation-name: ttr;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+@keyframes ttr{
+    0%{
+        background-image: url("https://image-resizer-cloud-api.akamaized.net/image/0E441AF9-EB39-4A16-B48B-61464EB72E97/0-3x1.jpg?width=2310&updatedTime=2024-03-20T22:17:27Z&dt=Web");
+
+    }
+    10%{
+        background-image: url("https://image-resizer-cloud-api.akamaized.net/image/2FC252CC-CA8F-49E9-BD4D-2292D00877AD/0-3x1.jpg?width=2310&updatedTime=2024-06-10T12:57:13Z&dt=Web");
+
+    }
+    50%{
+        background-image: url("https://image-resizer-cloud-api.akamaized.net/image/E67C5141-54D2-4B9A-88F7-C3D3BD35A076/0-3x1.jpg?width=2310&updatedTime=2024-06-07T14:31:36Z&dt=Web");
+
+    }
+    70%{
+        background-image: url("https://image-resizer-cloud-api.akamaized.net/image/E61A5134-85D3-448B-A0D2-A9351E7A29F0/0-3x1.jpg?width=2310&updatedTime=2024-06-07T14:30:29Z&dt=Web");
+    }
+}
+.h{
+    margin: 10px;
+    font-size: 30px;
+    color: rgb(10, 28, 230);
+
+
+}
+.h1{
+    border-radius: 10px;
+    margin: 15px;
+    display: flex;
+    flex-flow: wrap row;
+    row-gap: 20px;
+    column-gap: 75px;
+}

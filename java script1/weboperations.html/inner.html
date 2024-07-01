@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .ab{
+                text-align: center;
+                background-color: aqua;
+                padding: 30px;
+                height: 100%;
+                width: 90%;
+                border: solid;
+                border-radius: 50px;
+                border-color: red;
+            }
+            y{
+                columns: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="ab" id="demo"></h1>
+        <script>
+            var x = prompt("enter your name :");
+            var y = "Welcome "+x+" !";
+            var z = document.getElementById("demo");
+            z.innerHTML = y;
+        </script>
+    </body>
+</html>

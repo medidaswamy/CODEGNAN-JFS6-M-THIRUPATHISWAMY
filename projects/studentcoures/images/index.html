@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script>
+        var second_language;
+var second_language_price = 0;
+var course_name;
+var course_price = 0;
+var name;
+var mail;
+var mobile_number;
+function getvalues(){
+    var x = document.forms['abc']['fullname'];
+    name = x.value;
+    var y = document.forms['abc']['email'];
+    mail = y.value;
+    var z = document.forms['abc']['mobile'];
+    mobile_number = z.value;
+    console.log(name,mail,mobile_number);
+}
+function storevalue(x,y){
+    second_language = x;
+    second_language_price = y;
+}
+function coursevalue(course,price){
+    course_name = course;
+    course_price = price;
+}
+function addvalues(){
+    var element = document.getElementById("container");
+    element.style.display = "grid";
+    var newElement = document.createElement("div");
+    newElement.textContent = "NAME";
+    document.getElementById("container").appendChild(newElement);
+    var newElement = document.createElement("div");
+    newElement.textContent = name;
+    document.getElementById("container").appendChild(newElement);
+    var newElement = document.createElement("div");
+    newElement.textContent = "EMAIL ID";
+    document.getElementById("container").appendChild(newElement);
+    var newElement = document.createElement("div");
+    newElement.textContent = mail;
+    document.getElementById("container").appendChild(newElement);
+    var newElement = document.createElement("div");
+    newElement.textContent = "MOBILE NUMBER";
+    document.getElementById("container").appendChild(newElement);
+    var newElement = document.createElement("div");
+    newElement.textContent = mobile_number;
+    document.getElementById("container").appendChild(newElement);
+    var newElement = document.createElement("div");
+    newElement.textContent = "OPTED COURSE";
+    document.getElementById("container").appendChild(newElement);
+    var newElement = document.createElement("div");
+    newElement.textContent = course_name;
+    document.getElementById("container").appendChild(newElement);
+    if(second_language){
+        var newElement = document.createElement("div");
+        newElement.textContent = "SECOND LANGUAGE";
+        document.getElementById("container").appendChild(newElement);
+        var newElement = document.createElement("div");
+        newElement.textContent = second_language;
+        document.getElementById("container").appendChild(newElement);
+    }
+    else{
+        var newElement = document.createElement("div");
+        newElement.textContent = "SECOND LANGUAGE";
+        document.getElementById("container").appendChild(newElement);
+        var newElement = document.createElement("div");
+        newElement.textContent = "NOT OPTED";
+        document.getElementById("container").appendChild(newElement);
+    }
+    var newElement = document.createElement("div");
+    newElement.textContent = "TOTAL FEES";
+    document.getElementById("container").appendChild(newElement);
+    var newElement = document.createElement("div");
+    newElement.textContent = course_price + second_language_price;
+    document.getElementById("container").appendChild(newElement);
+}
+    </script>
+</head>
+<body>
+    
+    <form name="abc">
+        <label for="name">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="fullname" id="name" placeholder="Your Name:" width="100px">
+        <br>
+        <br>
+        <label for="email">E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="email" id="email" placeholder="example@mail.com">
+        <br>
+        <br>
+        <label for="phone">Mobile Number:</label>
+        <input type="tel" id="phone" name="mobile" placeholder="0123456789" pattern="[0-9]{10}">
+        <br>
+        <br>
+        <button type="submit" onclick="getvalues(); return false;">Submit</button>
+    </form>
+    <div class="container">
+        <div class="heading">
+            <h1>Student Course Management.</h1>   
+        </div>
+            <div class="course-details">
+                <div class="Course">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeQujnznM316igw_9gQUIWioVU2-R0bEk53A&s" alt="MPC" class="course-img" width="500px" height="500px">
+                    </div>
+                    <div class="details">
+                        <form>
+                            <input type="radio" value="English" onclick="storevalue('English',1500)">
+                            <label for="english">English</label><br>
+                        </form>
+                        <div>
+                            <h4>We Offer!</h4>
+                            <p>Complete Mathematics, Physics and Chemistry and you can select Optional Second Language 
+                                English.
+                            </p>
+                            <h5>Course:MPC</h5>
+                            <h5>Price:Rs.3000/-</h5>
+                            <h5>language:English</h5>
+                            <h5>price:Rs 1500</h5>
+                            <h5><button class="button" type="submit" onclick="coursevalue('MPC',3000)">Add to Cart</button></h5>
+                        </div>      
+                    </div>
+                </div>
+             
+
+                <div class="Course">
+                    <div>
+                        <img src="https://www.ameyaworldschool.in/idea/2018/10/cbse-class11-bipc.png" alt="BiPC" class="course-img"  width="100px" height="100px">
+                    </div>
+                    <div class="details">
+                        <form>
+                            <input type="radio" value="English" onclick="storevalue('English',1500)">
+                            <label for="english">English</label><br>
+                        </form> 
+                        <div>
+                            <h4>We Offer!</h4>
+                            <p>Complete Biology, Physics and Chemistry and you can select Optional Second Language 
+                                English.
+                            </p>
+                            <h5>Course:Bipc</h5>
+                            <h5>Price:Rs.4000/-</h5>
+                            <h5>language:English</h5>
+                            <h5>price:Rs 1500</h5>
+                            <h5><button class="button" type="submit" onclick="coursevalue('Bipc',4000)">Add to Cart</button></h5>
+                        </div>      
+                    </div>
+                </div>
+
+                <div class="Course">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGlLJKq2_UO8unAbgnA_hs1zoZiWJ_A8Qe2w&s" alt="MEC" class="course-img" width="500px" height="500px">
+                    </div>
+                    <div class="details">
+                        <form>
+                            <input type="radio" value="English" onclick="storevalue('English',1500)">
+                            <label for="html">English</label><br>
+                        </form>
+                        <div>
+                            <h4>We Offer!</h4>
+                            <p>Complete Mathematics, Economics and Civics and you can select Optional Second Language 
+                                English.
+                            </p>
+                            <h5>Course:MEC</h5>
+                            <h5>Price:Rs.5000/-</h5>
+                            <h5>language:English</h5>
+                            <h5>price:Rs 1500</h5>
+                            <h5><button class="button" type="submit" onclick="coursevalue('MEC',5000)">Add to Cart</button></h5>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+        <div class="cart-div">
+            <button type="submit" onclick="addvalues()">Click me to show cart</button>
+        </div>
+    </div>
+    <br>
+    <br>
+	<div class="y" id="container">
+	</div>
+</body>
+</html>

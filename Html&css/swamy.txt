@@ -1,0 +1,43 @@
+<!doctype html>
+<htmt>
+	<head>
+		<title>meta data </title>
+		<meta name="viewpoint" content="width=divice-width,initial-scale=1.0">
+		<meta http-equiv="refresh" content="100">
+		<meta charset="utf-8">
+		<meta name="discription" content="basic page">
+		<meta name="keypoint" content="meta,meta tag,html">
+	</head>
+	<body>
+		<table border="2" bordercolor="black" bgcolor="black">
+			<tr><th bgcolor="lightblue">Login</th><th bgcolor="lightblue">Register</th></tr>
+
+			<tfoot><tr><td colspan="2" align="center" bgcolor="lightblue">&copy;Copy right belongs</td></tr></tfoot>
+			<tr>
+				<td bgcolor="grey" height="300px" width="400px">
+					
+					<form action="course available.html" align = "center">	
+					<label for="Email id" align = "center">Email id</label><br>
+						<input type="email" id="Email id" required><br>
+						<label for="Password" align = "center">Password</label><br>
+						<input type="Password" id="Password" ><br>
+						<br>
+						<input type="Submit">
+				</td><br></form>
+			
+				<td bgcolor="grey" height="300px" width="400px">
+					<form action="welcome to register.html" align = "center">
+					<label for="Name">Name</label><br>
+					<input type="text" id="Name" ><br>
+					<label for="Email id" >Email id</label><br>
+					<input type="email" id="Email id" required><br>
+					<label for="Password" align="center" >Password</label><br>
+					<input type="Password" id="Password"><br>
+					<label for="Re enter Password" align = "center">Re enter Password</label><br>
+					<input type="Password" id="Re enter Password"><br>
+					<br>
+					<button type="Submit">Register</button></td></form>
+			</tr>
+		</table>
+	</body>
+</htmt>

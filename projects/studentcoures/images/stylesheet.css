@@ -1,0 +1,123 @@
+body{
+    background-color:cornsilk;
+    font-family: cursive;
+}
+
+.container{
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+.heading h1{
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.cart-div {
+    position: absolute;
+    margin-top: 0px;
+    margin-left:500px;
+    z-index: 1;
+}
+
+
+.container2{
+    position: relative;
+    top:40px;
+}
+
+#submit{
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    border-color:darkorange
+}
+
+.Course{
+	padding : 10px;
+	display: inline-grid;
+	margin : 40px;
+	height : 700x;
+	width : 500px;
+	border: solid;
+	border-radius: 10px;
+	background-color: rgba(165, 92, 180, 0.372);
+}
+
+.course-img{
+	position: relative;
+	top : 2px;
+	border: solid;
+	border-radius: 10px;
+	background-color: lightgrey;
+	height: 250px;
+	width : 400px;
+}
+.a{
+    margin-top: 100px;
+    margin-left: 400px;
+}
+input{
+    width: 500px;
+    height: 30px;
+}
+.submit{
+    width: 200px;
+    margin-left: 200px;
+    height: 40px;
+
+}
+
+.za{
+	position: relative;
+	text-align: center;
+	left : 10px;
+}
+button{
+	padding : 10px;
+}
+.y div{
+	margin : 10px;
+	border-radius: 20px;
+	text-align: center;
+	border: solid;
+	height : 50px;
+	width: 200px;
+	align-content: center;
+	font-weight: bold;
+}
+.y{
+	display: none;
+	padding : 40px;
+	grid-template-columns: 250px auto ;
+	justify-content: center;
+	justify-items: center;
+	margin : 10px;
+	border: solid;
+	border-radius: 30px;
+	background-color: lightblue;
+}
+.btn2{
+	border : solid;
+	margin : 20px;
+	width : 70%;
+	border-radius: 30px;
+}
+.zbcd{
+	font-family: courier;
+	width : 350px;
+}
+
+

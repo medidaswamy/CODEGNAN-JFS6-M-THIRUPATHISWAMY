@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            fetch("https://reqres.in/api/users/2",{
+                method : "put",
+                headers : {
+                    "content-type" : "application/json"
+                },
+                body : JSON.stringify({
+                    username : "swamynavyaswamy@gmail.com",
+                    password : "swamy123"
+                })
+            })
+            .then((res)=>{
+                return res.json();
+            })
+            .then((Response)=>{
+                console.log(Response);
+            })
+        </script>
+    </head>
+    <body>
+        <h1>Example for put action</h1>
+    </body>
+</html>
